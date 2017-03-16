@@ -3,7 +3,9 @@
 # KSScrollImageView
 
 * 快速实现无线轮播- Swift3.0
-* 下载之后请使用 pod update 将三方框架加入,项目上传时,并没有加入第三方框架,会报错
+* **注意：**下载之后请使用 pod update 将三方框架加入,项目上传时,并没有加入第三方框架,会报错，请先 cd 到文件目录，然后请 pod update， 代码为
+    
+         pod update --no-repo-update
 
 ***
 
