@@ -4,8 +4,12 @@
 
 * 快速实现无线轮播- Swift3.0
 * **注意：**下载之后请使用 pod update 将三方框架加入,项目上传时,并没有加入第三方框架,会报错，请先 cd 到文件目录，然后请 pod update， 代码为
-    
-         pod update --no-repo-update
+
+```objectivec
+
+pod update --no-repo-update
+
+```
 
 ***
 
@@ -27,7 +31,11 @@
 ## 如何使用
 使用时调用下面的方法即可:
 
-    scrollView.sendHttpRequest(method: .GET,urlString: urlString, parameters: nil,interval: 1)
+```objectivec  
+
+scrollView.sendHttpRequest(method: .GET,urlString: urlString, parameters: nil,interval: 1)
+
+```
 
 参数:
 
@@ -37,15 +45,20 @@
 
 闭包回调:
 
-    scrollView.callBack = { (index:Int,model:KSScrollModel)-> Void in
+```objectivec
+scrollView.callBack = { (index:Int,model:KSScrollModel)-> Void in
      		print("当前点击的是第\(index+1)张图片,模型是\(model)")
     }
+```
  
 输出: 只需要将 model 的属性拿出来即可,例: model. name 
 
     当前点击的是第2张图片,模型是<KSScrollImageView.KSScrollModel: 0x600000326040>
 
 ## 示例代码
+
+```objectivec
+
 	import UIKit
 	import SnapKit
 
@@ -74,3 +87,4 @@
     }
 }
 
+```
